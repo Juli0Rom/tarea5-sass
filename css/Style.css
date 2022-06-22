@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 4fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header header" "Seccion-1 Seccion-1 Seccion-1 Seccion-1" "footer footer footer footer"; }
+
+.header {
+  grid-area: header;
+  background-color: antiquewhite;
+  align-items: center;
+  display: flex;
+  flex-direction: row; }
+
+.header img {
+  max-width: 200px; }
+
+.header ul {
+  margin-top: 40px;
+  margin-left: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .header ul li {
+    list-style: none;
+    padding: 20px;
+    height: 30px; }
+    .header ul li:hover {
+      background-color: #d6ce5f;
+      border-radius: 15px; }
